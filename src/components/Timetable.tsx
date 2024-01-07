@@ -144,10 +144,10 @@ export default function Timetable({ timetable, slottedElectives }: { timetable: 
 
           return (
             <>
-              <div className="bg-amber-500 border-2 border-amber-300 font-bold rounded-md text-center py-3" style={{
+              <div className="bg-amber-500 border-2 border-amber-300 font-bold rounded-md text-center py-3 text-sm" style={{
                 gridColumn: getGridCol(nSlot),
                 gridRow: getGridRow(nSlot),
-              }}>{courses.map((object: [3]) => (<>{object[0]}<br/></>))}</div>
+              }}>{courses.map((object: number[]) => (<div className="mt-2">{object[1]}</div>))}</div>
             </>
           )
         })}
