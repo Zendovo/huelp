@@ -23,12 +23,12 @@ export default function CourseSelector({ courses, electiveIds, toggleElective }:
     setSearchQuery(e.target.value);
   }
 
-  return <div className="bg-neutral-500 px-4 rounded-3xl py-5">
+  return <div className="bg-neutral-800 px-4 rounded-3xl py-5">
     <input
       type="text"
       placeholder="Search"
       onChange={(e) => changeQuery(e)}
-      className="bg-neutral-600 rounded-full px-4 py-2 w-full"
+      className="bg-neutral-900 rounded-full px-4 py-2 w-full mb-2"
     />
     <div style={{ height: "80vh", overflowY: "scroll" }}>
       {filteredCourses.map((course) => (

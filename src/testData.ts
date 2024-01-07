@@ -56,19 +56,17 @@ const timetableData: Array<any> = [
       "hours": []
     },
     "practical": {
-      "sec": 5,
-      "sec_id": 66262,
+      "sec": 12,
+      "sec_id": 66269,
       "instructors": [
-        "Mritunjay Shall Peelam(RS)",
-        "Regalla Premsai(RS)",
-        "Naga Siva Sai Reddy(RS)",
-        "Gourab Majumder(RS)"
+        "Anukaran Khanna(RS)",
+        "Jaya Sharma(RS)"
       ],
       "slots": [
-        23,
-        24
+        66,
+        67
       ],
-      "room": "6017",
+      "room": "6119",
       "days": [],
       "hours": []
     },
@@ -245,15 +243,15 @@ const timetableData: Array<any> = [
       "slots": []
     },
     "tutorial": {
-      "sec": 7,
-      "sec_id": 66019,
+      "sec": 10,
+      "sec_id": 66022,
       "instructors": [
-        "Simran Jain(RS)"
+        "Neha Choithramani(RS)"
       ],
       "slots": [
         0
       ],
-      "room": "6102",
+      "room": "2207",
       "days": [],
       "hours": []
     },
