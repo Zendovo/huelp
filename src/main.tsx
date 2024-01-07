@@ -4,6 +4,6 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <div className='App'>Hello</div>
+    <div className='bg-neutral-300'>Hello</div>
   </React.StrictMode>,
 )
