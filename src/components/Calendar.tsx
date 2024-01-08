@@ -5,10 +5,12 @@ export default function Calendar({ midsemDates, compreDates }: { midsemDates: an
         <div className="text-center w-100 text-xl font-bold mb-5">MIDSEM DATES</div>
         {Object.keys(midsemDates).sort().map((date) => {
           const object = midsemDates[date];
+          const month = date[1] == "3" ? "Mar" : "May";
+          const day = date.substring(2);
 
           return (
             <div key={date} className="flex bg-neutral-700 rounded-lg py-4 mt-2 text-lg">
-              <div className="basis-3/12 font-bold px-8">{date}</div>
+              <div className="basis-3/12 font-bold px-8">{day} {month}</div>
               <div className="basis-9/12 text-md px-8">
                 {Object.keys(object).sort().map((session, index) => {
                   return (
@@ -27,10 +29,12 @@ export default function Calendar({ midsemDates, compreDates }: { midsemDates: an
         <div className="text-center w-100 text-xl font-bold mb-5">COMPRE DATES</div>
         {Object.keys(compreDates).sort().map((date) => {
           const object = compreDates[date];
+          const month = date[1] == "3" ? "Mar" : "May";
+          const day = date.substring(2);
 
           return (
             <div key={date} className="flex bg-neutral-700 rounded-lg py-4 mt-2 text-lg">
-              <div className="basis-3/12 font-bold px-8">{date}</div>
+              <div className="basis-3/12 font-bold px-8">{day} {month}</div>
               <div className="basis-9/12 text-md px-8">
                 {Object.keys(object).sort().map((session, index) => {
                   return (
