@@ -281,11 +281,11 @@ export default function TimetableScreen() {
       <div className="text-4xl font-bold text-center pt-8">huelp</div>
       <div className="text-md text-center pt-2">kyuki IR nahi lena firse! ❤️</div>
       <Timetable timetable={timetable} slottedElectives={slottedElectives} />
-      <div className="flex mx-8 py-8 gap-12">
-        <div className="basis-8/12">
+      <div className="flex flex-col xl:flex-row mx-8 py-8 gap-12">
+        <div className="xl:basis-8/12">
           <Calendar midsemDates={midsemDates} compreDates={compreDates} />
         </div>
-        <div className="basis-4/12">
+        <div className="xl:basis-4/12">
           <CourseSelector courses={courses} electiveIds={electiveIds} toggleElective={toggleElective} />
         </div>
       </div>

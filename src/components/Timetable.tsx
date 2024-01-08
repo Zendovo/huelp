@@ -1,8 +1,8 @@
 export default function Timetable({ timetable, slottedElectives }: { timetable: Array<any>, slottedElectives: any }) {
 
   return (
-    <div className="max-w-screen-xl mx-auto pt-12" style={{ minHeight: "100vh" }}>
-      <div className="grid grid-cols-7 grid-rows-12 gap-1 border-2 rounded-lg border-neutral-400 bg-neutral-900 shadow-2xl" style={{ minHeight: "72vh" }}>
+    <div className="max-w-screen-xl mx-auto pt-12" style={{ minHeight: "100vh", overflowX: "scroll" }}>
+      <div className="grid grid-cols-7 grid-rows-12 gap-1 border-2 rounded-lg border-neutral-400 bg-neutral-900 shadow-2xl" style={{ minHeight: "72vh", minWidth: "1000px" }}>
         <div
           className="row-start-1 row-end-2 bg-neutral-800 rounded-md text-center py-3"
           style={{ borderTopLeftRadius: "7.626px" }}

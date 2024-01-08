@@ -1,7 +1,7 @@
 export default function Calendar({ midsemDates, compreDates }: { midsemDates: any, compreDates: any }) {
   return (
-    <div className="bg-neutral-800 flex gap-8 w-full px-4 py-5 rounded-3xl shadow-2xl">
-      <div className="bg-neutral-900 basis-1/2 rounded-xl px-3 py-4">
+    <div className="bg-neutral-800 flex flex-col lg:flex-row gap-8 w-full px-4 py-5 rounded-3xl shadow-2xl">
+      <div className="bg-neutral-900 rounded-xl px-3 py-4 w-full">
         <div className="text-center w-100 text-xl font-bold mb-5">MIDSEM DATES</div>
         {Object.keys(midsemDates).sort().map((date) => {
           const object = midsemDates[date];
@@ -25,7 +25,7 @@ export default function Calendar({ midsemDates, compreDates }: { midsemDates: an
           )
         })}
       </div>
-      <div className="bg-neutral-900 basis-1/2 rounded-xl px-3 py-4">
+      <div className="bg-neutral-900 rounded-xl px-3 py-4 w-full">
         <div className="text-center w-100 text-xl font-bold mb-5">COMPRE DATES</div>
         {Object.keys(compreDates).sort().map((date) => {
           const object = compreDates[date];
